@@ -8,13 +8,39 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        white: '#ffffff',
+        moss: '#5B623A', // Corrected quotation marks
+        valleymoss: '#897E45',
+        yosemiteivory: '#EDD9B7',
+        meadow: '#C46D52',
+        sunshine: '#f1ba42',
+        cream: '#FBF1E5'
+
+
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
+      fontFamily: {
+        'cormorant': ['"Cormorant Garamond"', 'serif'],
+      },
+      fontWeight: {
+        'light': '300',
+        'normal': '400',
+        'medium': '500',
+        'semibold': '600',
+        'bold': '700',
+      }
+      
     },
   },
   plugins: [],
 };
+
 export default config;
+
